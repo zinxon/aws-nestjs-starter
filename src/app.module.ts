@@ -5,11 +5,9 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { GraphQLModule } from '@nestjs/graphql';
 
-import { AuthModule } from '@modules/auth/auth.module';
-import { UsersModule } from '@modules/users/users.module';
-
-// import { AuthController } from './modules/auth/auth.controller';
+import { AuthModule } from './modules/auth/auth.module';
 import { NotificationModule } from './modules/notification/notification.module';
+import { UsersModule } from './modules/users/users.module';
 
 @Module({
   imports: [
